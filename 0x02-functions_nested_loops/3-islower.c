@@ -12,5 +12,5 @@ int _islower(int c);
 	for (i = 'a'; i <= 'z'; i++)
 		if (i == c)
 			flag = 1;
-	return (low);
+	return (flag);
 }
