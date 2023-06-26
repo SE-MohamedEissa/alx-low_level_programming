@@ -3,7 +3,7 @@
 /**
  * rev_string - a function that reverse a string
  * followed by a new line.
- * @s: an input string
+ * @str: an input string
  * Return: no return
  */
 void rev_string(char *str)
