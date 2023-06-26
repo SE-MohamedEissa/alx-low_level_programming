@@ -5,11 +5,11 @@
  * @str:  input string
  * Return: no return
  */
-void puts_half(char *str)
+void puts_half(char *s)
 {
 	int l = 0, i, n;
 
-	while (str[l] != '\0')
+	while (s[l] != '\0')
 		l++;
 
 	if (l % 2 == 0)
@@ -19,7 +19,7 @@ void puts_half(char *str)
 		n = (l + 1) / 2;
 
 	for (i = n; i < l; i++)
-		_putchar(str[i]);
+		_putchar(s[i]);
 
 	_putchar('\n');
 }
