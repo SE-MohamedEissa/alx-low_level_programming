@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-	int s;
+	int st;
 	char c;
 
 	srand(time(NULL));
-	while (s <= 2772)
+	while (st <= 2772)
 	{
 		c = rand() % 128;
-		s += c;
+		st += c;
 		putchar(c);
 	}
-	printf("%c\n", (2772 - s));
+	printf("%c\n", (2772 - st));
 	return (0);
 }
