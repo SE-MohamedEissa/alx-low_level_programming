@@ -6,15 +6,15 @@
  * @s: an input string
  * Return: Nothing
  */
-void print_rev(char *s)
+void print_rev(char *str)
 {
 	int l = 0;
 
-	while (s[l] != '\0')
+	while (str[l] != '\0')
 		l++;
 
 	while (l)
-		_putchar(s[--l]);
+		_putchar(str[--l]);
 
 	_putchar('\n');
 }
