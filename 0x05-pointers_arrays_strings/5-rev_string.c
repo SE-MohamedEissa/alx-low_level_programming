@@ -6,18 +6,18 @@
  * @s: an input string
  * Return: no return
  */
-void rev_string(char *s)
+void rev_string(char *str)
 {
 	int len = 0, i = 0;
 	char x;
 
-	while (s[len] != '\0')
+	while (str[len] != '\0')
 		len++;
 
 	while (i < len--)
 	{
-		x = s[i];
-		s[i++] = s[len];
-		s[len] = x;
+		x = str[i];
+		str[i++] = str[len];
+		str[len] = x;
 	}
 }
