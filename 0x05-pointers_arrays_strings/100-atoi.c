@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	unsigned int total = 0;
+	unsigned int t = 0;
 	char x = 0;
 
 	while (*s)
@@ -19,7 +19,7 @@ int _atoi(char *s)
 		if (*s >= '0' && *s <= '9')
 		{
 			x = 1;
-			total = total * 10 + *s - '0';
+			t = t * 10 + *s - '0';
 		}
 
 		else if (x)
@@ -28,7 +28,7 @@ int _atoi(char *s)
 	}
 
 	if (sign < 0)
-		total = (-total);
+		t = (-t);
 
-	return (total);
+	return (t);
 }
