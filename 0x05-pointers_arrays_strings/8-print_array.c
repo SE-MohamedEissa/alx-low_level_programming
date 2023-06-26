@@ -7,14 +7,14 @@
  * @n: input n elements
  * Return: no return
  */
-void print_array(int *a, int n)
+void print_array(int *a, int m)
 {
 	int i = 0;
 
-	for (; i < n; i++)
+	for (; i < m; i++)
 	{
 		printf("%d", *(a + i));
-		if (i != (n - 1))
+		if (i != (m - 1))
 			printf(", ");
 	}
 	printf("\n");
