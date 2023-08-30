@@ -1,17 +1,26 @@
 #include "main.h"
 /**
- * _sqrt_recursion - calculate square root
+ * sqrti - calc the sqrt
+ * @i : num
  * @n : number
  * Return: squaring result
  */
-int _sqrt_recursion(int n)
+int sqrti(int n, int i)
 {
-	static int i;
-
-	if (n < 0 || i * i > n)
+	if (i * i > n)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	i++;
-	return (_sqrt_recursion(n));
+	return (sqrti(n, i + 1));
+}
+/**
+ * _sqrt_recursion - calculate square root of number
+ * @n: number
+ * Return: square root result
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (_sqrt_recursion(n, 0));
 }
