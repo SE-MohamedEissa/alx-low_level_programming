@@ -1,5 +1,17 @@
-#ifndef _OBJECT_LIKE_MACRO_H
-#define _OBJECT_LIKE_MACRO_H
+#ifndef DOG_H
+#define DOG_H
 
-#define SIZE 1024
-#endif /* _OBJECT_LIKE_MACRO_H*/
+/**
+ * struct dog - make struct called dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+typedef struct dog dog_t;
+#endif/* DOG_H */
