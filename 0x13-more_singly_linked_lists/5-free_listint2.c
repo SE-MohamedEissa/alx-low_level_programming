@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * free_listint - free list
+ * free_listint2 - free list
  * @head: first element of the list
  * Return: Nothing
  */
-void free_listint(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *nex;
 
